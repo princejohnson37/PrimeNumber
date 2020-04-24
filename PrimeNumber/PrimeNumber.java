@@ -1,5 +1,6 @@
 import java.applet.*;
 import java.awt.*;
+import java.awt.event.*;
 public class PrimeNumber extends Applet implements ActionListener{
 	private Label l1;
 	private Label l2;
@@ -26,10 +27,10 @@ public class PrimeNumber extends Applet implements ActionListener{
 
 	}
 	public void actionPerformed(ActionEvent e){
-		public int flag=0;
+		int flag=0;
 		int n=Integer.parseInt(t1.getText());
 		for(int i=2;i<n/2;i++){
-			if(n%i)==0){
+			if(n%i==0){
 				flag=1;
 				break;
 			}
